@@ -20,7 +20,7 @@ A Next.js application that visualizes orderbooks from OKX, Bybit, and Deribit. I
 
 1. **Clone the repository:**
 ```bash
-git clone <repository-url>
+git clone https://github.com/amant8183/SimeTide
 ```
 
 2. **Install dependencies:**
