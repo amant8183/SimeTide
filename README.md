@@ -21,7 +21,6 @@ A Next.js application that visualizes orderbooks from OKX, Bybit, and Deribit. I
 1. **Clone the repository:**
 ```bash
 git clone <repository-url>
-cd go_quant
 ```
 
 2. **Install dependencies:**
