@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #171717;
+
+}
+
+
+ 
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@theme{
+  /* Background Colors */
+  --color-borderDark: #000000;
+  --color-bgMain: #0f0f0f;
+  --color-bgPanel: #141414;
+  --color-bgContainer: #181818;
+  --color-bginput: #2A2D35;
+  --color-bgHover: #363A45;
+
+  /* Buttons Color */
+  --color-btnOnclick: #00d0a0;
+
+  /* Text Colors */
+  --color-txtPrimary: #EAF0F6;
+  --color-txtSecondary: #868D9B;
+  --color-txtOnAccent: #6ee2b0;
+  --color-txtLink: #3279FE;
+
+  /* Accent & Status Colors */
+  --color-accent-primary: #25C178;
+  --color-status-positive: #25C178;
+  --color-status-negative: #FF4D4D;
+  
+  /* Border Colors */
+  --color-border-primary: #363A45;
+
+  
+}
+
+
+
+
+@layer utilities{
+  .innerContainer {
+    @apply m-2 rounded-md bg-black/5 border-4 border-bgPanel shadow-[0_0_0_1px] shadow-bginput hover:shadow-txtOnAccent/75;
+  }
+
+  .navBtn{
+    @apply flex items-center px-2 lg:px-4 py-1 lg:py-1.5 rounded focus:outline-none font-bold;
+  }
+
+  .btnGradient{
+    background: linear-gradient(to right, #35d799,#44da9e,#61e1aa,#6ee2b0);
+  }
+
+  .btnGradientHover:hover{
+    background: linear-gradient(to right, #35d799,#44da9e,#61e1aa,#6ee2b0);
+  }
+
+  .simulatorHeading{
+    @apply text-txtPrimary text-sm font-bold;
+  }
+
+
+  .gridbg{
+    @apply  bg-[linear-gradient(to_right,#000000_1px,transparent_1px),linear-gradient(to_bottom,#000000_1px,transparent_1px)] bg-[size:10px_10px]
+  }
+
+}
+
+.orderbook-scrollbar::-webkit-scrollbar {
+  width: 2px; /* even thinner than 'thin' */
+}
+
+
+
+
